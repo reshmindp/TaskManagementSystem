@@ -19,9 +19,18 @@ Step 5: Update the .env file with your database credentials:
         DB_DATABASE=task_management_db
         DB_USERNAME=root
         DB_PASSWORD=
-Step 6: Generate App Key: php artisan key:generate
-Step 7: Run Migrations: php artisan migrate
-Step 8: Configure Queue Driver: Set the queue driver to database in the .env file:
+Step 6: Setup the SMTP credentials in .env file for mail service: 
+        MAIL_MAILER=
+        MAIL_SCHEME=
+        MAIL_HOST=
+        MAIL_PORT=
+        MAIL_USERNAME=null
+        MAIL_PASSWORD=null
+        MAIL_FROM_ADDRESS=
+        MAIL_FROM_NAME="Task Management"
+Step 7: Generate App Key: php artisan key:generate
+Step 8: Run Migrations: php artisan migrate
+Step 9: Configure Queue Driver: Set the queue driver to database in the .env file:
         QUEUE_CONNECTION=database
 
 API Endpoints
